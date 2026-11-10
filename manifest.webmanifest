@@ -1,0 +1,11 @@
+{
+  "name": "Gerador de Laudos SST",
+  "short_name": "Laudos SST",
+  "description": "Gera PGR, LTCAT e laudos de insalubridade, periculosidade e ergonomia.",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#f4f5f2",
+  "theme_color": "#14532d",
+  "lang": "pt-BR",
+  "icons": [{ "src": "icone.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}
