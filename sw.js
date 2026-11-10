@@ -1,6 +1,6 @@
 // Rede primeiro; o cache só entra quando não há internet. Assim uma versão nova aparece sem limpar nada.
-const CACHE = "laudos-sst-v1";
-const ARQUIVOS = ["./", "index.html", "app.css", "icone.svg", "manifest.webmanifest", "js/normas.js", "js/store.js", "js/docs.js", "js/telas.js", "js/app.js"];
+const CACHE = "laudos-sst-v2";
+const ARQUIVOS = ["./", "index.html", "app.css", "icone.svg", "icone-192.png", "icone-512.png", "icone-180.png", "manifest.webmanifest", "js/normas.js", "js/store.js", "js/docs.js", "js/telas.js", "js/app.js"];
 self.addEventListener("install", (ev) => { ev.waitUntil(caches.open(CACHE).then((c) => c.addAll(ARQUIVOS))); self.skipWaiting(); });
 self.addEventListener("activate", (ev) => {
   ev.waitUntil(caches.keys().then((ks) => Promise.all(ks.filter((k) => k !== CACHE).map((k) => caches.delete(k)))).then(() => self.clients.claim()));
